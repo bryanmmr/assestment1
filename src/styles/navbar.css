@@ -1,0 +1,30 @@
+.navbar{
+  height: 80px;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato', serif;
+}
+.navbar__list{
+  margin: 0;
+  padding-right: 5%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar__element{
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.navbar__element a{
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar__element a:visited{
+  color: none;
+}

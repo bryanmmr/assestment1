@@ -1,6 +1,7 @@
 .home{
   text-align: center;
   padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .product__container{
   display: flex;
@@ -55,6 +56,9 @@
 }
 .product__detail--button:disabled{
   opacity: 40%;
+}
+.product__detail--button:hover{
+  cursor: pointer;
 }
 .product__detail--button:hover:disabled{
   cursor: not-allowed;

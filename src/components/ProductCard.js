@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const toTime = (coutdown) => {
   const hours = Math.floor(coutdown / 3600);
@@ -19,7 +20,7 @@ const ProductCard = ({ data }) => {
     // eslint-disable-next-line no-unused-expressions
      countdown > 0 && setTimeout(() => setCountDown(countdown - 1), 1000);
   }, [countdown])
-
+  const navigate = useNavigate();
   return(
     <div className="product__card" key={data.id}>
       <div className="product__card--image">
@@ -29,7 +30,13 @@ const ProductCard = ({ data }) => {
       <div className="product--price">{data.price}</div>
       <div className="product__detail">
         <h4 className="product__detail--time"> {toTime(parseInt(countdown, 10))} </h4>
-        <button className="product__detail--button" type="button" disabled={!countdown}>Detalle</button>
+        <button
+          className="product__detail--button"
+          type="button"
+          disabled={!countdown}
+          onClick={()=>navigate(`/detalle/${data.id}`)}>
+            Detalle
+        </button>
       </div>
     </div>
 )}

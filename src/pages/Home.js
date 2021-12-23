@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(async ()=> {
     await axios.get('https://fakestoreapi.com/products')
       .then(res => setProductData(res.data))
-  })
+  }, [])
   return (
     <div className="home">
       <h2>Productos</h2>

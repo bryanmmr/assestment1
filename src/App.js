@@ -1,6 +1,6 @@
-import './styles/App.css';
+import Router from './routes/Router';
 
 const App = () => (
-    <div className="App"/>
+    <Router />
   )
 export default App;

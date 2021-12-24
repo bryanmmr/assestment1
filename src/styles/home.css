@@ -38,6 +38,9 @@
   max-width: 100%;
   margin: .8rem;
 }
+.product--price::before{
+  content: '$ ';
+}
 .product__detail{
   display: flex;
   justify-content: space-around;

@@ -27,7 +27,7 @@ const ProductCard = ({ data }) => {
         <img className="product--image" src={data.image} alt={data.title} />
       </div>
       <div className="product--title" title={data.title}>{data.title}</div>
-      <div className="product--price">{data.price}</div>
+      <div className="product--price">{data.price.toFixed(2)}</div>
       <div className="product__detail">
         <h4 className="product__detail--time"> {toTime(parseInt(countdown, 10))} </h4>
         <button

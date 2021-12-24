@@ -23,7 +23,7 @@ const About = () => (
           <h4>¿Qu&eacute; aprend&iacute; durante el curso?</h4>
           <ul className="info__list">
             <li className="info__list--item">Correcto manejo de Hooks en React</li>
-            <li className="info__list--item">HTTP, Cors y autenticacion</li>
+            <li className="info__list--item">HTTP, CORS y autenticaci&oacute;n</li>
             <li className="info__list--item">Testing con Jest y React Testing Library</li>
           </ul>
         </div>

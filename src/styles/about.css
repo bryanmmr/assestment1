@@ -11,6 +11,7 @@
   margin: auto;
   text-align: center;
   width: 80%;
+  color: #0c0c0c;
 }
 .info__list{
   list-style: none;
@@ -21,6 +22,12 @@
 }
 .info__network svg{
   font-size: 36px;
+  margin-right: .5rem;
+}
+.info__network--mail, .info__network--github{
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
 }
 @media screen and (min-width : 480px) {
   .info {

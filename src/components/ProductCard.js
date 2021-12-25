@@ -6,7 +6,7 @@ const toTime = (coutdown) => {
   const hours = Math.floor(coutdown / 3600);
   const minutes = Math.floor((coutdown - (hours * 3600)) / 60);
   const seconds = coutdown - (hours * 3600) - (minutes * 60);
-  return (`
+  return (`s
     ${hours.toLocaleString('us-US', { minimumIntegerDigits: 2 })} :
     ${minutes.toLocaleString('us-US', { minimumIntegerDigits: 2 })} :
     ${seconds.toLocaleString('us-US', { minimumIntegerDigits: 2 })}

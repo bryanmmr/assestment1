@@ -1,6 +1,7 @@
 import "../styles/about.css";
 import { FaGithub } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
+import foto from "../assets/foto.jpg";
 
 const About = () => (
     <section className="about">
@@ -9,7 +10,7 @@ const About = () => (
       </h1>
       <div className="info">
         <div className="info__image">
-          <img src="#" className="info__image" alt="foto"/>
+          <img src={ foto } className="info__image--img" alt="foto"/>
         </div>
         <div className="info__name">
           <h3>Bryan Manzano</h3>

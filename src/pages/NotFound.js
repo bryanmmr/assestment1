@@ -1,8 +1,8 @@
-import NotFoundImage from '../assets/2456051.jpg'
+import NotFoundImage from '../assets/2456051.jpg';
 
-const NotFound = () =>(
+const NotFound = () => (
   <section className="notFound">
-    <img src={ NotFoundImage } alt='404' />
+    <img src={NotFoundImage} alt="404" />
   </section>
-)
-export default NotFound
+);
+export default NotFound;
